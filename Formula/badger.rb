@@ -1,5 +1,5 @@
 class Badger < Formula
-  desc "Badger is a command-line tool that adds labels to your app icon"
+  desc "Command-line tool that adds labels to your app icon"
   homepage "https://github.com/hex/Badger"
   url "https://github.com/hex/badger/releases/download/v2020.8.26/badger-osx-x64.zip"
   version "2020.8.26"
@@ -8,5 +8,9 @@ class Badger < Formula
 
   def install
     bin.install Dir["*"]
+  end
+
+  test do
+    system "#{bin}/badger", "--version"
   end
 end
