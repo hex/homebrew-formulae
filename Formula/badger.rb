@@ -2,6 +2,7 @@ class Badger < Formula
   version "2022.12.2"
   desc "Command-line tool that adds labels to your app icon"
   homepage "https://github.com/hex/Badger"
+  license "MIT"
 
   on_macos
     if Hardware::CPU.intel?
@@ -18,8 +19,6 @@ class Badger < Formula
     url "https://github.com/hex/badger/releases/download/v2022.12.2/badger-linux-x64.zip"
     sha256 "272cc19043f01f18047c4f88afb1f99e11b6bf00523433af3d9f3bc1f0849379"
   end
-
-  license "MIT"
 
   def install
     bin.install Dir["*"]
