@@ -4,7 +4,7 @@ class Badger < Formula
   homepage "https://github.com/hex/Badger"
   license "MIT"
 
-  on_macos
+  on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/hex/badger/releases/download/v2022.12.2/badger-osx-x64.zip"
       sha256 "af6836783cb038e300123737e0cbbf01ab7ae2f6574317d11e17dcbc24ed9ae2"
