@@ -6,7 +6,7 @@ class Badger < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/hex/badger/releases/download/v2022.12.6/badger-linux-x64.zip"
+      url "https://github.com/hex/badger/releases/download/v2022.12.6/badger-osx-x64.zip"
       sha256 "245f961cbaf05fc47dba0947ba381da45cce81d5e1971f548f4091012442c90b"
     end
     if Hardware::CPU.arm?
